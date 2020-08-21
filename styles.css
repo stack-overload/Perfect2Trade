@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700');
+* {
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+div.container {
+    width: calc(90% - 20px);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+div.navigation div.container {
+    width: calc(90% - 60px);
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a.brand {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+nav.links {
+    text-align: right;
+    text-transform: uppercase;
+    float: right;
+}
+
+nav.links a {
+    margin-left: 10px;
+}
+
+nav.links a:hover {
+    background: #eee;
+    color: #111;
+    transition: 150ms linear all;
+}
+
+div.flash {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+}
+
+div.flash div.third {
+    width: calc(100% /3);
+    display: inline-block;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+div.flash div.third:nth-child(2) {
+    background: #111;
+}
+
+div.half {
+    width: calc(50% - 5px);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.half.images {
+    text-align: center;
+}
+
+div.half:nth-of-type(2n) {
+    margin-right: 10px;
+}
+
+div.half div.image {
+    height: 400px;
+    width: 400px;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 10px auto;
+    display: none;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+div.half div.image:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+div.half div.thumbnail {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #eee;
+    padding: 2px;
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 0;
+}
+
+div.half div.thumbnail:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+div.half div.thumbnail:last-child {
+    margin-right: 0;
+}
+
+div.half.content h1,
+h3 {
+    margin: 15px 0 0;
+    color: #666;
+}
+
+div.half.content h2 {
+    color: #777;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+div.half.content p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+div.break {
+    width: 20%;
+    height: 1px;
+    background: #eee;
+    display: block;
+    margin: 10px 0 30px;
+}
+
+ul {
+    font-size: 1.1em;
+}
+
+ul li {
+    color: #666;
+}
+
+span.price {
+    font-size: 1.2em;
+    line-height: 1.15em;
+    border: 1px solid #333;
+    padding: 13px 15px;
+    margin: 15px 0 0;
+}
+
+a.buy {
+    margin: 15px 0 0;
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.buy:hover {
+    background: #111;
+    transition: 200ms linear all;
+}
+
+footer {
+    background: #101010;
+    padding: 60px 0;
+    width: 100%;
+    display: block;
+    margin: 70px 0 0;
+}
+
+footer div.container-fifth {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+}
+
+footer nav {
+    margin: 0;
+    padding: 0;
+}
+
+footer nav a {
+    display: block;
+    text-align: left;
+    padding: 2px;
+    color: #888;
+}
+
+footer nav a:hover {
+    background: none;
+    color: #333;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+}
+
+span.icon {
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 7px;
+    margin-bottom: -3px;
+    display: inline-block;
+}
+
+span.icon.fb {
+    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/facebook.svg')
+}
+
+span.icon.tw {
+    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/twitter.svg')
+}
+
+span.icon.in {
+    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/instagram.svg')
+}
+
+span.icon.paypal {
+    background-image: url('https://joshuamcewen.co.uk/media/paypal.svg');
+    height: 2.5em;
+    width: 2.5em;
+}
+
+span.icon.visa {
+    background-image: url('https://joshuamcewen.co.uk/media/visa.svg');
+    height: 2.5em;
+    width: 2.5em;
+}
+
+span.icon.mastercard {
+    background-image: url('https://joshuamcewen.co.uk/media/mastercard.svg');
+    height: 2.5em;
+    width: 2.5em;
+}
+
+span.icon.amex {
+    background-image: url('https://joshuamcewen.co.uk/media/amex.svg');
+    height: 2.5em;
+    width: 2.5em;
+}
+
+span.icon.discover {
+    background-image: url('https://joshuamcewen.co.uk/media/discover.svg');
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
+    transition: 150ms linear all;
+    display: block;
+}
+
+#img1:checked~#show1,
+#img2:checked~#show2,
+#img3:checked~#show3,
+#img4:checked~#show4,
+#img5:checked~#show5 {
+    display: block;
+}
+
+section {
+    display: none;
+    padding: 40px;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+label:hover {
+    background: #000;
+    transition: 200ms linear all;
+}
+
+input:checked+label {
+    background: #000;
+}
+
+div.images label {
+    display: inline-block;
+    background: none;
+    padding: 5px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+div.images img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.images label:hover {
+    background: #666;
+    transition: 200ms linear all;
+}
+
+div.images input:checked+label {
+    background: #eee;
+}
+
+.third {
+    float: left;
+}
+
+@media screen and (max-width: 700px) {
+    div.half {
+        margin: 0;
+        width: 100%;
+    }
+    div.image {
+        max-width: 100%;
+    }
+    label {
+        font-size: 0.8em;
+    }
+    div.flash div.third {
+        display: block;
+        width: 100%;
+    }
+    nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav.links a {
+        display: block;
+        text-align: center;
+    }
+    div.flash {
+        width: 100%;
+    }
+    footer {
+        padding: 0;
+    }
+    footer div.container-fifth {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+}
