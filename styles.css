@@ -1,380 +1,389 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:400,700');
-* {
-    font-family: 'Overpass', Arial, Helvetica, sans-serif;
-    color: #333;
-    margin: 0;
+@import url(https://fonts.googleapis.com/css?family=Overpass:400,700);
+
+div.spudmonkee {
+  font-family: 'Overpass', Arial, Helvetica, sans-serif;
+  color: #333
+}
+div.spudmonkee.inverse {
+  background: #333;
+  color: #fff;
+}
+div.spudmonkee div.t-container {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0 auto
+}
+div.spudmonkee div.navigation div.t-container {
+  width: calc(90% - 60px);
+  padding: 30px;
+  border-bottom: 1px solid #eee
+}
+div.spudmonkee nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0
+}
+div.spudmonkee nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+  display: inline-block
+}
+div.spudmonkee.inverse nav a {
+  color: #fff;
+}
+div.spudmonkee nav a.brand {
+  font-size: 1.5em;
+  text-transform: uppercase
+}
+div.spudmonkee nav.links {
+  text-align: right;
+  text-transform: uppercase
+}
+div.spudmonkee nav.links a {
+  margin-left: 10px
+}
+div.spudmonkee nav.links a:hover {
+  background: #eee;
+  color: #111;
+  transition: 150ms linear all
+}
+div.spudmonkee.inverse nav.links a:hover {
+  background: #222;
+  color: #fff;
+}
+div.spudmonkee div.flash {
+  width: 100%;
+  display: block;
+  margin: 15px 0
+}
+div.spudmonkee div.flash div.third {
+  width: calc(100% /3);
+  display: inline-block;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-transform: uppercase
+}
+div.spudmonkee.inverse div.flash div.third {
+  background: #222;
+}
+div.spudmonkee div.flash div.third:nth-child(2) {
+  background: #111
+}
+div.spudmonkee div.half {
+  width: calc(50% - 5px);
+  display: inline-block;
+  vertical-align: middle
+}
+div.spudmonkee div.half.images {
+  text-align: center
+}
+div.spudmonkee div.half:nth-of-type(2n) {
+  margin-right: 10px
+}
+div.spudmonkee div.half div.image {
+  height: 400px;
+  width: calc(100% - 10px);
+  max-width: 400px;
+  border: 1px solid #eee;
+  padding: 5px;
+  margin: 10px auto;
+  display: none;
+  font-size: 0;
+  vertical-align: middle
 }
 
-div.container {
-    width: calc(90% - 20px);
-    padding: 10px;
-    margin: 0 auto;
+div.spudmonkee.inverse div.half div.image {
+  display: block;
+  border: none;
+}
+div.spudmonkee div.half div.image:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%
+}
+div.spudmonkee div.half div.thumbnail {
+  height: 70px;
+  width: 70px;
+  border: 1px solid #eee;
+  padding: 2px;
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 0
+}
+div.spudmonkee div.half div.thumbnail:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%
+}
+div.spudmonkee div.half div.thumbnail:last-child {
+  margin-right: 0
+}
+div.spudmonkee div.half.content h1,
+div.spudmonkee h3 {
+  margin: 15px 0 0;
+  color: #666
+}
+div.spudmonkee div.half.content h2 {
+  color: #777;
+  margin: 0;
+  font-size: 1.2em
+}
+div.spudmonkee div.half.content p {
+  color: #666;
+  font-size: 1.1em
+}
+div.spudmonkee.inverse div.half.content p, div.spudmonkee.inverse div.half.content h2, div.spudmonkee.inverse div.half.content h1,
+div.spudmonkee.inverse h3 {
+  color: #fff;
+}
+div.spudmonkee div.break {
+  width: 20%;
+  height: 1px;
+  background: #eee;
+  display: block;
+  margin: 10px 0 30px
+}
+div.spudmonkee ul {
+  font-size: 1.1em;
+  padding: 0;
+  margin-left: 25px
+}
+div.spudmonkee ul li {
+  color: #666
+}
+div.spudmonkee div.pricing {
+  display: flex;
+  align-items: stretch;
+}
+div.spudmonkee span.price {
+  font-size: 1.2em;
+  line-height: 1.15em;
+  border: 1px solid #333;
+  padding: 13px 15px;
+  margin: 15px 0 0
+}
+/*div.spudmonkee span.price del:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  content: "unlicensed template";
+  left: 0;
+  top: 0;
+}*/
+div.spudmonkee a.buy {
+  margin: 15px 0 0;
+  padding: 15px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase
+}
+div.spudmonkee.inverse a.buy {
+  background: #fff;
+  color: #333;
+}
+div.spudmonkee a.buy:hover {
+  background: #111;
+  transition: .2s linear all
+}
+div.spudmonkee.inverse a.buy:hover {
+  background: #eee;
+  color: #333;
+}
+div.spudmonkee footer {
+  background: #101010;
+  padding: 60px 0;
+  width: 100%;
+  display: block;
+  margin: 70px 0 0
+}
+div.spudmonkee.inverse footer {
+  margin: 0;
+}
+div.spudmonkee footer div.t-container-fifth {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  color: #666
+}
+div.spudmonkee footer nav {
+  margin: 0;
+  padding: 0
+}
+div.spudmonkee footer nav a {
+  display: block;
+  text-align: left;
+  padding: 2px;
+  color: #888
+}
+div.spudmonkee footer nav a:hover {
+  background: 0 0;
+  color: #333
+}
+div.spudmonkee footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+div.spudmonkee footer ul li {
+  margin: 0;
+  padding: 0
+}
+div.spudmonkee span.icon {
+  height: 1.15em;
+  width: 1.15em;
+  margin-right: 7px;
+  margin-bottom: -3px;
+  display: inline-block
+}
+div.spudmonkee span.icon.fb {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook.svg)
+}
+div.spudmonkee span.icon.tw {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter.svg)
+}
+div.spudmonkee span.icon.in {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram.svg)
 }
 
-div.navigation div.container {
-    width: calc(90% - 60px);
-    padding: 30px;
-    border-bottom: 1px solid #eee;
+div.spudmonkee.inverse span.icon.fb {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook-iv.svg)
 }
-
-nav {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50%;
+div.spudmonkee.inverse span.icon.tw {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter-iv.svg)
 }
-
-nav a {
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
+div.spudmonkee.inverse span.icon.in {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram-iv.svg)
 }
-
-nav a.brand {
-    font-size: 1.5em;
-    text-transform: uppercase;
+div.spudmonkee.inverse span.icon.yt {
+  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/youtube-iv.svg)
 }
-
-nav.links {
-    text-align: right;
-    text-transform: uppercase;
-    float: right;
+div.spudmonkee span.icon.paypal {
+  background-image: url(https://joshuamcewen.co.uk/media/paypal.svg);
+  height: 2.5em;
+  width: 2.5em
 }
-
-nav.links a {
-    margin-left: 10px;
+div.spudmonkee span.icon.visa {
+  background-image: url(https://joshuamcewen.co.uk/media/visa.svg);
+  height: 2.5em;
+  width: 2.5em
 }
-
-nav.links a:hover {
-    background: #eee;
-    color: #111;
-    transition: 150ms linear all;
+div.spudmonkee span.icon.mastercard {
+  background-image: url(https://joshuamcewen.co.uk/media/mastercard.svg);
+  height: 2.5em;
+  width: 2.5em
 }
-
-div.flash {
-    width: 100%;
-    display: block;
-    margin: 15px 0;
+div.spudmonkee span.icon.amex {
+  background-image: url(https://joshuamcewen.co.uk/media/amex.svg);
+  height: 2.5em;
+  width: 2.5em
 }
-
-div.flash div.third {
-    width: calc(100% /3);
-    display: inline-block;
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 15px 0;
-    text-transform: uppercase;
+div.spudmonkee span.icon.discover {
+  background-image: url(https://joshuamcewen.co.uk/media/discover.svg);
+  height: 2.5em;
+  width: 2.5em
 }
-
-div.flash div.third:nth-child(2) {
-    background: #111;
+div.spudmonkee #tab1:checked~#content1,
+div.spudmonkee #tab2:checked~#content2,
+div.spudmonkee #tab3:checked~#content3,
+div.spudmonkee #tab4:checked~#content4 {
+  transition: 150ms linear all;
+  display: block
 }
-
-div.half {
-    width: calc(50% - 5px);
-    display: inline-block;
-    vertical-align: middle;
+div.spudmonkee #img1:checked~#show1,
+div.spudmonkee #img2:checked~#show2,
+div.spudmonkee #img3:checked~#show3,
+div.spudmonkee #img4:checked~#show4,
+div.spudmonkee #img5:checked~#show5 {
+  display: block
 }
-
-div.half.images {
-    text-align: center;
+div.spudmonkee section {
+  display: none;
+  padding: 30px 20px 40px;
+  border-top: 1px solid #ddd
 }
-
-div.half:nth-of-type(2n) {
-    margin-right: 10px;
+div.spudmonkee.inverse section {
+  height: auto;
 }
-
-div.half div.image {
-    height: 400px;
-    width: 400px;
-    border: 1px solid #eee;
-    padding: 5px;
-    margin: 10px auto;
-    display: none;
-    font-size: 0;
-    vertical-align: middle;
+img {
+  max-width: 100%;
 }
-
-div.half div.image:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+div.spudmonkee input {
+  display: none
 }
-
-div.half div.thumbnail {
-    height: 80px;
-    width: 80px;
-    border: 1px solid #eee;
-    padding: 2px;
-    display: inline-block;
-    margin-right: 3px;
-    font-size: 0;
+div.spudmonkee label {
+  display: inline-block;
+  padding: 10px;
+  background: #333;
+  color: #fff
 }
-
-div.half div.thumbnail:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+div.spudmonkee label:hover {
+  background: #111;
+  cursor: pointer;
+  transition: .2s linear all
 }
-
-div.half div.thumbnail:last-child {
-    margin-right: 0;
+div.spudmonkee input:checked+label {
+  background: #000
 }
-
-div.half.content h1,
-h3 {
-    margin: 15px 0 0;
-    color: #666;
+div.spudmonkee div.images label {
+  display: inline-block;
+  background: 0 0;
+  padding: 5px;
+  color: #fff;
+  vertical-align: middle
 }
-
-div.half.content h2 {
-    color: #777;
-    margin: 0;
-    font-size: 1.2em;
+div.spudmonkee div.images img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  display: inline-block
 }
-
-div.half.content p {
-    color: #666;
-    font-size: 1.1em;
+div.spudmonkee div.images label:hover {
+  bakground: #666;
+  transition: .2s linear all
 }
-
-div.break {
-    width: 20%;
-    height: 1px;
-    background: #eee;
-    display: block;
-    margin: 10px 0 30px;
+div.spudmonkee div.images input:checked+label {
+  background: #eee
 }
-
-ul {
-    font-size: 1.1em;
-}
-
-ul li {
-    color: #666;
-}
-
-span.price {
-    font-size: 1.2em;
-    line-height: 1.15em;
-    border: 1px solid #333;
-    padding: 13px 15px;
-    margin: 15px 0 0;
-}
-
-a.buy {
-    margin: 15px 0 0;
-    padding: 15px;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-a.buy:hover {
-    background: #111;
-    transition: 200ms linear all;
-}
-
-footer {
-    background: #E5E1DA;
-    padding: 60px 0;
-    width: 100%;
-    display: block;
-    margin: 70px 0 0;
-}
-
-footer div.container-fifth {
-    width: 20%;
-    display: inline-block;
-    vertical-align: top;
-    color: #666;
-}
-
-footer nav {
-    margin: 0;
-    padding: 0;
-}
-
-footer nav a {
-    display: block;
-    text-align: left;
-    padding: 2px;
-    color: #888;
-}
-
-footer nav a:hover {
-    background: none;
-    color: #333;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer ul li {
-    margin: 0;
-    padding: 0;
-}
-
-span.icon {
-    height: 1.15em;
-    width: 1.15em;
-    margin-right: 7px;
-    margin-bottom: -3px;
-    display: inline-block;
-}
-
-span.icon.fb {
-    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/facebook.svg')
-}
-
-span.icon.tw {
-    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/twitter.svg')
-}
-
-span.icon.in {
-    background-image: url('https://joshuamcewen.co.uk/site/resources/img/social/instagram.svg')
-}
-
-span.icon.paypal {
-    background-image: url('https://joshuamcewen.co.uk/media/paypal.svg');
-    height: 2.5em;
-    width: 2.5em;
-}
-
-span.icon.visa {
-    background-image: url('https://joshuamcewen.co.uk/media/visa.svg');
-    height: 2.5em;
-    width: 2.5em;
-}
-
-span.icon.mastercard {
-    background-image: url('https://joshuamcewen.co.uk/media/mastercard.svg');
-    height: 2.5em;
-    width: 2.5em;
-}
-
-span.icon.amex {
-    background-image: url('https://joshuamcewen.co.uk/media/amex.svg');
-    height: 2.5em;
-    width: 2.5em;
-}
-
-span.icon.discover {
-    background-image: url('https://joshuamcewen.co.uk/media/discover.svg');
-    height: 2.5em;
-    width: 2.5em;
-}
-
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4 {
-    transition: 150ms linear all;
-    display: block;
-}
-
-#img1:checked~#show1,
-#img2:checked~#show2,
-#img3:checked~#show3,
-#img4:checked~#show4,
-#img5:checked~#show5 {
-    display: block;
-}
-
-section {
-    display: none;
-    padding: 40px;
-    border-top: 1px solid #ddd;
-}
-
-input {
-    display: none;
-}
-
-label {
-    display: inline-block;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-}
-
-label:hover {
-    background: #000;
-    transition: 200ms linear all;
-}
-
-input:checked+label {
-    background: #000;
-}
-
-div.images label {
-    display: inline-block;
-    background: none;
-    padding: 5px;
-    color: #fff;
-    vertical-align: middle;
-}
-
-div.images img {
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-div.images label:hover {
-    background: #666;
-    transition: 200ms linear all;
-}
-
-div.images input:checked+label {
-    background: #eee;
-}
-
-.third {
-    float: left;
-}
-
-@media screen and (max-width: 700px) {
-    div.half {
-        margin: 0;
-        width: 100%;
-    }
-    div.image {
-        max-width: 100%;
-    }
-    label {
-        font-size: 0.8em;
-    }
-    div.flash div.third {
-        display: block;
-        width: 100%;
-    }
-    nav {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    nav.links a {
-        display: block;
-        text-align: center;
-    }
-    div.flash {
-        width: 100%;
-    }
-    footer {
-        padding: 0;
-    }
-    footer div.container-fifth {
-        width: calc(100% - 30px);
-        padding: 15px;
-    }
+@media screen and (max-width: 600px) {
+  div.spudmonkee nav,
+  div.spudmonkee nav.links a {
+      display: block;
+      text-align: center
+  }
+  div.spudmonkee div.half {
+      margin: 0;
+      width: 100%
+  }
+  div.spudmonkee div.image {
+      max-width: 100%
+  }
+  div.spudmonkee label {
+      font-size: .8em
+  }
+  div.spudmonkee div.flash div.third {
+      display: block;
+      width: 100%
+  }
+  div.spudmonkee div.flash,
+  div.spudmonkee nav {
+      width: 100%
+  }
+  div.spudmonkee footer {
+      padding: 0
+  }
+  div.spudmonkee footer div.t-container-fifth {
+      width: calc(100% - 30px);
+      padding: 15px
+  }
 }
