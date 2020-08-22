@@ -1,173 +1,217 @@
 @import url(https://fonts.googleapis.com/css?family=Overpass:400,700);
-
 div.spudmonkee {
-  font-family: 'Overpass', Arial, Helvetica, sans-serif;
-  color: #333
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    color: #333
 }
+
 div.spudmonkee.inverse {
-  background: #333;
-  color: #fff;
+    background: #333;
+    color: #fff;
 }
+
 div.spudmonkee div.t-container {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 0 auto
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto
 }
+
+.navigation {
+    background-color: #E5E1DA;
+}
+
 div.spudmonkee div.navigation div.t-container {
-  width: calc(90% - 60px);
-  padding: 30px;
-  border-bottom: 1px solid #eee
+    width: calc(90% - 60px);
+    padding: 30px;
+    border-bottom: 1px solid #eee
 }
+
 div.spudmonkee nav {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%;
-  padding: 0
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0
 }
+
 div.spudmonkee nav a {
-  text-decoration: none;
-  padding: 10px;
-  color: #333;
-  display: inline-block
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+    display: inline-block
 }
+
 div.spudmonkee.inverse nav a {
-  color: #fff;
+    color: #fff;
 }
+
 div.spudmonkee nav a.brand {
-  font-size: 1.5em;
-  text-transform: uppercase
+    font-size: 1.5em;
+    text-transform: uppercase
 }
+
 div.spudmonkee nav.links {
-  text-align: right;
-  text-transform: uppercase
+    text-align: right;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 3%;
 }
+
 div.spudmonkee nav.links a {
-  margin-left: 10px
+    margin-left: 10px
 }
+
 div.spudmonkee nav.links a:hover {
-  background: #eee;
-  color: #111;
-  transition: 150ms linear all
+    background: #eee;
+    color: #111;
+    transition: 150ms linear all
 }
+
 div.spudmonkee.inverse nav.links a:hover {
-  background: #222;
-  color: #fff;
+    background: #222;
+    color: #fff;
 }
+
 div.spudmonkee div.flash {
-  width: 100%;
-  display: block;
-  margin: 15px 0
+    width: 100%;
+    display: block;
+    margin: 15px 0
 }
+
 div.spudmonkee div.flash div.third {
-  width: calc(100% /3);
-  display: inline-block;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  padding: 15px 0;
-  text-transform: uppercase
+    width: calc(100% /3);
+    display: inline-block;
+    text-align: center;
+    background: #E7A88D;
+    color: #fff;
+    padding: 15px 0;
+    text-transform: uppercase;
+    float: right;
 }
+
 div.spudmonkee.inverse div.flash div.third {
-  background: #222;
+    background: #222;
 }
+
 div.spudmonkee div.flash div.third:nth-child(2) {
-  background: #111
+    background: #DA6C3D;
 }
+
 div.spudmonkee div.half {
-  width: calc(50% - 5px);
-  display: inline-block;
-  vertical-align: middle
+    width: calc(50% - 5px);
+    display: inline-block;
+    vertical-align: middle
 }
+
 div.spudmonkee div.half.images {
-  text-align: center
+    text-align: center
 }
+
 div.spudmonkee div.half:nth-of-type(2n) {
-  margin-right: 10px
+    margin-right: 10px;
+    float: right;
+    margin-top: 10%;
 }
+
 div.spudmonkee div.half div.image {
-  height: 400px;
-  width: calc(100% - 10px);
-  max-width: 400px;
-  border: 1px solid #eee;
-  padding: 5px;
-  margin: 10px auto;
-  display: none;
-  font-size: 0;
-  vertical-align: middle
+    height: 400px;
+    width: calc(100% - 10px);
+    max-width: 400px;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 10px auto;
+    display: none;
+    font-size: 0;
+    vertical-align: middle
 }
 
 div.spudmonkee.inverse div.half div.image {
-  display: block;
-  border: none;
+    display: block;
+    border: none;
 }
+
 div.spudmonkee div.half div.image:before {
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
 }
+
 div.spudmonkee div.half div.thumbnail {
-  height: 70px;
-  width: 70px;
-  border: 1px solid #eee;
-  padding: 2px;
-  display: inline-block;
-  margin-right: 3px;
-  font-size: 0
+    height: 70px;
+    width: 70px;
+    border: 1px solid #eee;
+    padding: 2px;
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 0
 }
+
 div.spudmonkee div.half div.thumbnail:before {
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
 }
+
 div.spudmonkee div.half div.thumbnail:last-child {
-  margin-right: 0
+    margin-right: 0
 }
+
 div.spudmonkee div.half.content h1,
 div.spudmonkee h3 {
-  margin: 15px 0 0;
-  color: #666
+    margin: 15px 0 0;
+    color: #666
 }
+
 div.spudmonkee div.half.content h2 {
-  color: #777;
-  margin: 0;
-  font-size: 1.2em
+    color: #777;
+    margin: 0;
+    font-size: 1.2em
 }
+
 div.spudmonkee div.half.content p {
-  color: #666;
-  font-size: 1.1em
+    color: #666;
+    font-size: 1.1em
 }
-div.spudmonkee.inverse div.half.content p, div.spudmonkee.inverse div.half.content h2, div.spudmonkee.inverse div.half.content h1,
+
+div.spudmonkee.inverse div.half.content p,
+div.spudmonkee.inverse div.half.content h2,
+div.spudmonkee.inverse div.half.content h1,
 div.spudmonkee.inverse h3 {
-  color: #fff;
+    color: #fff;
 }
+
 div.spudmonkee div.break {
-  width: 20%;
-  height: 1px;
-  background: #eee;
-  display: block;
-  margin: 10px 0 30px
+    width: 20%;
+    height: 1px;
+    background: #eee;
+    display: block;
+    margin: 10px 0 30px
 }
+
 div.spudmonkee ul {
-  font-size: 1.1em;
-  padding: 0;
-  margin-left: 25px
+    font-size: 1.1em;
+    padding: 0;
+    margin-left: 25px
 }
+
 div.spudmonkee ul li {
-  color: #666
+    color: #666
 }
+
 div.spudmonkee div.pricing {
-  display: flex;
-  align-items: stretch;
+    display: flex;
+    align-items: stretch;
 }
+
 div.spudmonkee span.price {
-  font-size: 1.2em;
-  line-height: 1.15em;
-  border: 1px solid #333;
-  padding: 13px 15px;
-  margin: 15px 0 0
+    font-size: 1.2em;
+    line-height: 1.15em;
+    border: 1px solid #333;
+    padding: 13px 15px;
+    margin: 15px 0 0
 }
+
+
 /*div.spudmonkee span.price del:after {
   position: absolute;
   width: 100%;
@@ -177,213 +221,252 @@ div.spudmonkee span.price {
   left: 0;
   top: 0;
 }*/
+
 div.spudmonkee a.buy {
-  margin: 15px 0 0;
-  padding: 15px;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase
+    margin: 15px 0 0;
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase
 }
+
 div.spudmonkee.inverse a.buy {
-  background: #fff;
-  color: #333;
+    background: #fff;
+    color: #333;
 }
+
 div.spudmonkee a.buy:hover {
-  background: #111;
-  transition: .2s linear all
+    background: #111;
+    transition: .2s linear all
 }
+
 div.spudmonkee.inverse a.buy:hover {
-  background: #eee;
-  color: #333;
+    background: #eee;
+    color: #333;
 }
+
 div.spudmonkee footer {
-  background: #101010;
-  padding: 60px 0;
-  width: 100%;
-  display: block;
-  margin: 70px 0 0
+    background: #E5E1DA;
+    padding: 60px 0;
+    width: 100%;
+    display: block;
+    margin: 70px 0 0
 }
+
 div.spudmonkee.inverse footer {
-  margin: 0;
+    margin: 0;
 }
+
 div.spudmonkee footer div.t-container-fifth {
-  width: 20%;
-  display: inline-block;
-  vertical-align: top;
-  color: #666
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+    display: table-cell;
 }
+
 div.spudmonkee footer nav {
-  margin: 0;
-  padding: 0
+    margin: 0;
+    padding: 0
 }
+
 div.spudmonkee footer nav a {
-  display: block;
-  text-align: left;
-  padding: 2px;
-  color: #888
+    display: block;
+    text-align: left;
+    padding: 2px;
+    color: #888
 }
+
 div.spudmonkee footer nav a:hover {
-  background: 0 0;
-  color: #333
+    background: 0 0;
+    color: #333
 }
+
 div.spudmonkee footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0
+    list-style-type: none;
+    margin: 0;
+    padding: 0
 }
+
 div.spudmonkee footer ul li {
-  margin: 0;
-  padding: 0
+    margin: 0;
+    padding: 0
 }
+
 div.spudmonkee span.icon {
-  height: 1.15em;
-  width: 1.15em;
-  margin-right: 7px;
-  margin-bottom: -3px;
-  display: inline-block
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 7px;
+    margin-bottom: -3px;
+    display: inline-block
 }
+
 div.spudmonkee span.icon.fb {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook.svg)
 }
+
 div.spudmonkee span.icon.tw {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter.svg)
 }
+
 div.spudmonkee span.icon.in {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram.svg)
 }
 
 div.spudmonkee.inverse span.icon.fb {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook-iv.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/facebook-iv.svg)
 }
+
 div.spudmonkee.inverse span.icon.tw {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter-iv.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/twitter-iv.svg)
 }
+
 div.spudmonkee.inverse span.icon.in {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram-iv.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/instagram-iv.svg)
 }
+
 div.spudmonkee.inverse span.icon.yt {
-  background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/youtube-iv.svg)
+    background-image: url(https://joshuamcewen.co.uk/site/resources/img/social/youtube-iv.svg)
 }
+
 div.spudmonkee span.icon.paypal {
-  background-image: url(https://joshuamcewen.co.uk/media/paypal.svg);
-  height: 2.5em;
-  width: 2.5em
+    background-image: url(https://joshuamcewen.co.uk/media/paypal.svg);
+    height: 2.5em;
+    width: 2.5em
 }
+
 div.spudmonkee span.icon.visa {
-  background-image: url(https://joshuamcewen.co.uk/media/visa.svg);
-  height: 2.5em;
-  width: 2.5em
+    background-image: url(https://joshuamcewen.co.uk/media/visa.svg);
+    height: 2.5em;
+    width: 2.5em
 }
+
 div.spudmonkee span.icon.mastercard {
-  background-image: url(https://joshuamcewen.co.uk/media/mastercard.svg);
-  height: 2.5em;
-  width: 2.5em
+    background-image: url(https://joshuamcewen.co.uk/media/mastercard.svg);
+    height: 2.5em;
+    width: 2.5em
 }
+
 div.spudmonkee span.icon.amex {
-  background-image: url(https://joshuamcewen.co.uk/media/amex.svg);
-  height: 2.5em;
-  width: 2.5em
+    background-image: url(https://joshuamcewen.co.uk/media/amex.svg);
+    height: 2.5em;
+    width: 2.5em
 }
+
 div.spudmonkee span.icon.discover {
-  background-image: url(https://joshuamcewen.co.uk/media/discover.svg);
-  height: 2.5em;
-  width: 2.5em
+    background-image: url(https://joshuamcewen.co.uk/media/discover.svg);
+    height: 2.5em;
+    width: 2.5em
 }
+
 div.spudmonkee #tab1:checked~#content1,
 div.spudmonkee #tab2:checked~#content2,
 div.spudmonkee #tab3:checked~#content3,
 div.spudmonkee #tab4:checked~#content4 {
-  transition: 150ms linear all;
-  display: block
+    transition: 150ms linear all;
+    display: block
 }
+
 div.spudmonkee #img1:checked~#show1,
 div.spudmonkee #img2:checked~#show2,
 div.spudmonkee #img3:checked~#show3,
 div.spudmonkee #img4:checked~#show4,
 div.spudmonkee #img5:checked~#show5 {
-  display: block
+    display: block
 }
+
 div.spudmonkee section {
-  display: none;
-  padding: 30px 20px 40px;
-  border-top: 1px solid #ddd
+    display: none;
+    padding: 30px 20px 40px;
+    border-top: 1px solid #ddd
 }
+
 div.spudmonkee.inverse section {
-  height: auto;
+    height: auto;
 }
+
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 div.spudmonkee input {
-  display: none
+    display: none
 }
+
 div.spudmonkee label {
-  display: inline-block;
-  padding: 10px;
-  background: #333;
-  color: #fff
+    display: inline-block;
+    padding: 10px;
+    background: #333;
+    color: #fff
 }
+
 div.spudmonkee label:hover {
-  background: #111;
-  cursor: pointer;
-  transition: .2s linear all
+    background: #111;
+    cursor: pointer;
+    transition: .2s linear all
 }
+
 div.spudmonkee input:checked+label {
-  background: #000
+    background: #000
 }
+
 div.spudmonkee div.images label {
-  display: inline-block;
-  background: 0 0;
-  padding: 5px;
-  color: #fff;
-  vertical-align: middle
+    display: inline-block;
+    background: 0 0;
+    padding: 5px;
+    color: #fff;
+    vertical-align: middle
 }
+
 div.spudmonkee div.images img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-  display: inline-block
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    display: inline-block
 }
+
 div.spudmonkee div.images label:hover {
-  bakground: #666;
-  transition: .2s linear all
+    bakground: #666;
+    transition: .2s linear all
 }
+
 div.spudmonkee div.images input:checked+label {
-  background: #eee
+    background: #eee
 }
+
 @media screen and (max-width: 600px) {
-  div.spudmonkee nav,
-  div.spudmonkee nav.links a {
-      display: block;
-      text-align: center
-  }
-  div.spudmonkee div.half {
-      margin: 0;
-      width: 100%
-  }
-  div.spudmonkee div.image {
-      max-width: 100%
-  }
-  div.spudmonkee label {
-      font-size: .8em
-  }
-  div.spudmonkee div.flash div.third {
-      display: block;
-      width: 100%
-  }
-  div.spudmonkee div.flash,
-  div.spudmonkee nav {
-      width: 100%
-  }
-  div.spudmonkee footer {
-      padding: 0
-  }
-  div.spudmonkee footer div.t-container-fifth {
-      width: calc(100% - 30px);
-      padding: 15px
-  }
+    div.spudmonkee nav,
+    div.spudmonkee nav.links a {
+        display: block;
+        text-align: center
+    }
+    div.spudmonkee div.half {
+        margin: 0;
+        width: 100%
+    }
+    div.spudmonkee div.image {
+        max-width: 100%
+    }
+    div.spudmonkee label {
+        font-size: .8em
+    }
+    div.spudmonkee div.flash div.third {
+        display: block;
+        width: 100%
+    }
+    div.spudmonkee div.flash,
+    div.spudmonkee nav {
+        width: 100%
+    }
+    div.spudmonkee footer {
+        padding: 0
+    }
+    div.spudmonkee footer div.t-container-fifth {
+        width: calc(100% - 30px);
+        padding: 15px
+    }
 }
