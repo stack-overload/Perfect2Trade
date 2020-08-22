@@ -214,7 +214,8 @@ div.spudmonkee footer div.t-container-fifth {
   width: 20%;
   display: inline-block;
   vertical-align: top;
-  color: #666
+  color: #666;
+  float: right;
 }
 div.spudmonkee footer nav {
   margin: 0;
@@ -384,6 +385,7 @@ div.spudmonkee div.images input:checked+label {
   }
   div.spudmonkee footer div.t-container-fifth {
       width: calc(100% - 30px);
-      padding: 15px
+      padding: 15px;
+    float: right;
   }
 }
